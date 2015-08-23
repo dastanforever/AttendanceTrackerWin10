@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="AttendanceTracker.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AttendanceTracker"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <FlipView x:ConnectionId='1' x:Name="introView" HorizontalAlignment="Left" HorizontalContentAlignment="Stretch" VerticalAlignment="Top" >
+            <StackPanel VerticalAlignment="Center">
+                <RichTextBlock HorizontalAlignment="Center">
+                    <Paragraph FontFamily="Segoe UI Light" FontSize="50" >Hello User!!!!</Paragraph>
+                </RichTextBlock>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center">
+                <RichTextBlock HorizontalAlignment="Center">
+                    <Paragraph FontFamily="Segoe UI Light" FontSize="50" >Track Your attendance in a few clicks. Never get a back again!</Paragraph>
+                </RichTextBlock>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center">
+                <RichTextBlock HorizontalAlignment="Center">
+                    <Paragraph FontFamily="Segoe UI Light" FontSize="50" >Update your timetable</Paragraph>
+                </RichTextBlock>
+                <Button x:ConnectionId='2' Content="Get Started" HorizontalAlignment="Center"                     ></Button>
+            </StackPanel>
+        </FlipView>
+
+    </Grid>
+</Page>
+
